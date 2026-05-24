@@ -31,3 +31,4 @@ D:\Programming\C# by ms\c# Web api\obj\Debug\net10.0\refint\c# Web api.dll
 D:\Programming\C# by ms\c# Web api\obj\Debug\net10.0\c# Web api.pdb
 D:\Programming\C# by ms\c# Web api\obj\Debug\net10.0\c# Web api.genruntimeconfig.cache
 D:\Programming\C# by ms\c# Web api\obj\Debug\net10.0\ref\c# Web api.dll
+D:\Programming\C# by ms\c# Web api\obj\Debug\net10.0\c# Web api.sourcelink.json
