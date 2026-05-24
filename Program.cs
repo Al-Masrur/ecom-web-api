@@ -5,9 +5,19 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 //REST api => GET, POST, PUT, DELETE
-app.MapGet("/Hello", () =>
+app.MapGet("/", () =>
 {
-    return "This is from mapGet function";
+    return "Api is working....";
+});
+
+app.MapGet("/hello", () =>
+{
+    return "Api is working....";
+});
+
+app.MapPost("/hello", () =>
+{
+    return "Api is working....";
 });
 
 app.Run();
