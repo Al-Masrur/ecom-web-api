@@ -1,6 +1,17 @@
+using System.Runtime.CompilerServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
@@ -22,7 +33,12 @@ app.MapPost("/hello", () =>
 
 app.MapPut("/hello", () =>
 {
-    return "PUT: api is working"
+    return "PUT: api is working....";
+});
+
+app.MapDelete("/hello", () =>
+{
+    return "DELETE: api is working....";
 });
 
 app.Run();
